@@ -9,7 +9,7 @@
     --gutter: 30px;
     --side-small: 26;
     --side-big: 36;
-    --depth: 3200px;
+    --depth: 3700px;
     --transition: .75s cubic-bezier(.075, .5, 0, 1);
 
 }
@@ -170,7 +170,7 @@ video.frame-media{
 }
 
 .skill_name h3 {
-    font-size: calc(var(--index) * 3);
+    font-size: calc(var(--index) * 1);
 }
 
 
