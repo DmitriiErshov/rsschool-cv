@@ -144,6 +144,29 @@
                     </div>
                 </div>
 
+                <div class="frame frame_bg">
+                    <div class="frame__content text-right" >
+                        <h2>Code Example</h2>
+                    </div>
+                </div>
+
+                <div class="frame frame_bg">
+                    <div class="frame__content">
+                        <div class="frame__content text-left">
+                            <pre><code class="hljs" id="code">const anchors = document.querySelectorAll('a[href*="#"]')
+for (let anchor of anchors) {
+    anchor.addEventListener("click", function(event){
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href')
+        document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "s"
+        })
+    })
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
 
                 <div class="frame frame_bg">
                     <div class="frame__content">
@@ -184,6 +207,13 @@
                         <p>English level - A2</p>
                     </div>
                 </div>      
+
+                <div class="frame frame_bg">
+                    <div class="frame__content text-left ">
+                        <h2>Education</h2>
+                        <p> -   KAZAN STATE ENERGY UNIVERSITY - 2010</p>               
+                    </div>
+                </div>    
 
                 <div class="frame">
                     <div class="frame__content">© 2022 by Ershov Dmitrii </div>
