@@ -41,8 +41,8 @@ body{
 
 header{
     background: rgba(242, 120, 92, 0.7);
-    background: url(../image/bg.jpg) no-repeat center;
-    background-size: cover;
+    /* background:  url(../image/bg.jpg) no-repeat center; */
+    /* background-size: cover; */
 }
 
 .header__container{
@@ -98,6 +98,133 @@ header{
     height: 100vh;
     background: url(../image/bg.jpg) no-repeat center;
     background-size: cover;
+    padding-top: 109px;
 }
 
+.preview__titel{
+    max-width: 892px;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+    margin-bottom: 46px;
+}
+.preview__subtitel{
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 46px;
+}
+
+.search-form__info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.search-form__info{
+   
+    
+}
+
+.search-form__field{
+    padding-left: 41px;
+    width: 892px;
+    height: 95px;
+    left: 120px;
+    top: 416px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    border: 0;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+
+}
+
+.search-form__field::placeholder{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.search-form__btn{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    margin-left: -246px;
+    margin-top: 18px;
+    width: 228px;
+    height: 59px;
+    left: 766px;
+    top: 434px;
+}
+
+input:focus {
+    outline: none;
+}
 /* preview  style end */
+
+/* steps  style start */
+.steps__container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.steps__title{
+    margin-top: 67px;
+}
+
+h2{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+
+.frame__list{
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-evenly;
+
+}
+
+.frame__item{
+    display: flex;
+    flex-direction: column;
+    width: 247px;
+    height: 154px;
+    left: 0px;
+    top: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+.frame__item img{
+    width: 100px;
+}
+
+.steps__subtitle{
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+/* steps  style end */
