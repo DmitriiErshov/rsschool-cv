@@ -228,3 +228,152 @@ h2{
     color: #0D606F;
 }
 /* steps  style end */
+
+/* destinations  style start */
+
+.destinations__container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.destinations__container{
+    margin-top: 97px;
+}
+
+.slider{
+    max-width: 1440px;
+}
+
+.slick-list{
+    overflow: hidden;
+}
+
+.slick-track{
+    display: flex;
+    margin-top: 58px;
+}
+
+.slider button{
+    /* display: none; */
+}
+
+.btn_destinations{
+    display: flex;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF  ;
+    width: 228px;
+    height: 59px;
+    left: 607px;
+    top: 2172px;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+}
+.btn_destinations img{
+    margin-top: 9.5px;
+    padding-left: 31px;
+}
+
+.btn_destinations p{
+    margin-top: 13.5px;
+    padding-left: 10px;
+
+}
+/* destinations  style end */
+
+
+/* STORIES  style start */
+
+.stories__container{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.stories__list{
+    margin-top: 27px;
+   
+}
+
+.stories{
+    background: url(../image/bg_stories.jpg) no-repeat center;
+    background-size: cover;
+
+}
+.stories__container{}
+.stories__item{
+    display: flex;
+    margin-left: 120px;
+    margin-top: 30px;
+}
+.item__text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    
+}
+
+.text__titile{
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;   
+    color: #0D606F;
+}
+
+.text__subtitle{
+    margin-top: 24px;
+    max-width: 760px;
+    font-size: 20px;
+    line-height: 24px;  
+    color: #0D606F;
+
+}
+
+.btn__stories{
+    margin-top: 40px;
+    margin-bottom: 62px;
+}
+/* STORIES  style end */
+
+
+/* Footer  style start */
+
+footer{
+    background: url(/image/bg_footer.jpg)  ;
+    background-size: cover;
+
+}
+
+.footer__list{
+    margin-left: 590px;
+    max-width: 720px;
+    /* margin-top: 62px; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer__text p{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+}
+.footer__contacts{
+    display: flex;
+    gap: 20px;
+}
+
+/* Footer  style end */
