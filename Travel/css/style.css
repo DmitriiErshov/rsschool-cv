@@ -38,24 +38,39 @@ body{
 }
 
 /* header style start */
-
-header{
-    /* background:  url(../image/bg.jpg) no-repeat center; */
-    /* background-size: cover; */
-}
-
 .header__container{
-    position: sticky;
-    top: 90px ;
+    position: fixed;
+    z-index: 5;
+    min-width: 1440px;
     background: rgba(242, 120, 92, 0.7);
-
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    padding-left: 120px;
     height: 90px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
+}
+.header__logo{
+    width: 216px;
 }
 
+.logo_text{
+    margin-left: 6px;
+}
+
+.header__nav{
+    margin-left: 158px;
+}
+.header__logo-link{
+    display: flex;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+}
 .header__list{
     display: flex;
     flex-wrap: wrap;
@@ -70,15 +85,12 @@ header{
     color: #ffffff;
     
 }
-
 .header__item{
     margin-right: 42px;
 }
-
 .header__item:last-child{
-    margin-right: 0;
+    margin-right: 198px;
 }
-
 .btn__login{
     color: #FFFFFF;     
     font-family: 'Red Hat Text';
@@ -91,35 +103,39 @@ header{
     left: 1217px;
     top: 25px;
 }
-
 /* header style end */
 
 /* preview  style start */
-
 .preview{
-    margin-top: -90px ;
-    height: 100vh;
     background: url(../image/bg.jpg) no-repeat center;
-    /* background-size: cover; */
-    padding-top: 109px;
+    
 }
 
+.preview_container{
+    padding-top: 120px;
+    margin-left: 120px;
+}
 .preview__titel{
     max-width: 892px;
     font-weight: 700;
     font-size: 80px;
     line-height: 96px;
     color: #FFFFFF;
-    margin-bottom: 46px;
+    
 }
 .preview__subtitel{
+    margin-top: 30px;
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    margin-bottom: 46px;
+    
 }
 
+.search-form{
+    margin-top: 46px;
+    padding-bottom: 279px;
+}
 .search-form__info{
     display: flex;
     flex-wrap: wrap;
@@ -177,6 +193,7 @@ input:focus {
 
 /* steps  style start */
 .steps__container{
+    margin-top: 67px;
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -184,11 +201,9 @@ input:focus {
     align-items: center;
     flex-direction: column;
 }
-
 .steps__title{
-    margin-top: 67px;
+    max-width: 611px;
 }
-
 h2{
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -199,25 +214,35 @@ h2{
 }
 
 .frame__list{
+    padding-left: 130px;
     width: 100%;
-    margin-top: 40px;
+    margin-top: 38px;
     display: flex;
-    align-items: center;
-    align-content: space-between;
-    justify-content: space-evenly;
+   
+
 
 }
 
 .frame__item{
     display: flex;
     flex-direction: column;
-    width: 247px;
     height: 154px;
     left: 0px;
     top: 0px;
     align-items: center;
     justify-content: center;
+    flex-basis: auto;
 }
+
+.frame__item:nth-child(2) {
+    margin-left: 233px;
+}
+
+
+.frame__item:nth-child(3) {
+    margin-left: 162px;
+}
+
 
 .frame__item img{
     width: 100px;
@@ -258,6 +283,10 @@ h2{
 .item_1 {
     min-width: 180px;
     background: url(/image/destinations_spain_1.jpg) no-repeat;
+}
+
+.item_1 p{
+    display: none;
 }
 
 .item_2 {
@@ -352,6 +381,7 @@ h2{
 /* STORIES  style start */
 
 .stories__container{
+    margin-top: 80px;
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
@@ -359,28 +389,28 @@ h2{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 80px;
 }
 
 .stories__list{
-    margin-top: 27px;
+    margin-top: 50px;
    
 }
 
 .stories{
     background: url(../image/bg_stories.png) no-repeat center;
-    background-position-y: 183px;
+    background-position-y: 107px;
 
 }
-.stories__container{}
+
 .stories__item{
     display: flex;
-    margin-left: 120px;
-    margin-top: 30px;
+   
+    margin-top: 28px;
     
 }
 
 .item__pick img{
+    filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
 }
 
@@ -392,6 +422,8 @@ h2{
 }
 
 .text__titile{
+    font-family: 'Aleo';
+    font-style: normal;
     font-weight: 400;
     font-size: 35px;
     line-height: 42px;   
@@ -401,14 +433,27 @@ h2{
 .text__subtitle{
     margin-top: 24px;
     max-width: 760px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
     font-size: 20px;
     line-height: 24px;  
     color: #0D606F;
 
 }
 
+.text_more{
+    text-decoration: none;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-decoration-line: underline;
+    color: #0D606F;
+}
 .btn__stories{
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 62px;
 }
 /* STORIES  style end */
@@ -419,14 +464,11 @@ h2{
 footer{
     background: url(/image/bg_stories.png) no-repeat center;
     background-position-y: -1274px;
-    /* background-size: cover; */
-
 }
 
 .footer__list{
     margin-left: 590px;
     max-width: 720px;
-    /* margin-top: 62px; */
     display: flex;
     align-items: center;
     justify-content: space-between;
