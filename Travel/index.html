@@ -9,8 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Slick slider -->
     <!-- <link rel="stylesheet" href="/slick/slick.css"> -->
     <!-- <link rel="stylesheet" href="/slick/slick-theme.css"> -->
+    <!-- Slick slider -->
 </head>
 <body>
     <header>
@@ -44,14 +46,16 @@
     <main>
         <section class="preview">
             <div class="container">
-                <h1 class="preview__titel">Explore the beauty of the World</h1>
-                <p class="preview__subtitel">Receive personalized recommendations for countries, hotels, activities and more</p>
-                <fieldset class="search-form">
-                    <p class="search-form__info">
-                        <input type="text" class="search-form__field" placeholder="What would you like to do?">
-                        <button type="submit" class="btn search-form__btn">Start Planning</button>
-                    </p>
-                </fieldset>
+                <div class="preview_container">
+                    <h1 class="preview__titel">Explore the beauty of the World</h1>
+                    <p class="preview__subtitel">Receive personalized recommendations for countries, hotels, activities and more</p>
+                    <fieldset class="search-form">
+                        <p class="search-form__info">
+                            <input type="text" class="search-form__field" placeholder="What would you like to do?">
+                            <button type="submit" class="btn search-form__btn">Start Planning</button>
+                        </p>
+                    </fieldset>
+                </div>  
             </div>
         </section>
         <section class="steps">
@@ -80,15 +84,23 @@
                 <div class="destinations__container">
                     <h2 class="destinations__title">POPULAR DESTINATIONS</h2>
                     <div class="slider">
-                        <div class="slider__item">
-                            <img src="/image/destinations_spain.jpg" alt="">
+                        <div class="slider__item item_1">
+                            <!-- <img src="/image/destinations_spain.jpg" alt=""> -->
+                            <p class="slider_text">SPAIN</p>
                         </div>
-                        <div class="slider__item">
-                            <img src="/image/destinations_japan.jpg" alt="">
+                        <div class="slider__item item_2">
+                            <!-- <img src="/image/destinations_japan.jpg" alt="">                            <p class="slider_text"></p> -->
+                            <p class="slider_text">JAPAN</p>
                         </div>
-                        <div class="slider__item">
-                            <img src="/image/destinations_usa.jpg" alt="">
+                        <div class="slider__item item_3">
+                            <!-- <img src="/image/destinations_usa.jpg" alt="">                            <p class="slider_text"></p> -->
+                            <p class="slider_text">USA</p>
                         </div>
+                    </div>
+                    <div class="dots">
+                        <div class="dots_item"></div>
+                        <div class="dots_item"></div>
+                        <div class="dots_item"></div>
                     </div>
                     <button class="btn btn_destinations">
                         <img src="/image/arrow_btn.svg" alt="arr">
@@ -162,8 +174,10 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="/slick/slick.min.js"></script>
+    <!-- slick slider -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="/slick/slick.min.js"></script> -->
+    <!-- slick slider -->
     <script src="/js/script.js"></script>
 </body>
 </html> 
