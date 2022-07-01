@@ -18,6 +18,7 @@ html{
 }
 
 body{
+    max-width: 1440;
     font-family: 'aleo';
     font-style: normal;
     font-size: 16px;
@@ -45,22 +46,22 @@ body{
     min-width: 1440px;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-    padding-left: 120px;
+    /* padding-left: 120px; */
     height: 90px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
 }
 .header__logo{
-    width: 216px;
+    /* width: 216px; */
 }
 
 .logo_text{
-    margin-left: 6px;
+    /* margin-left: 6px; */
 }
 
 .header__nav{
-    margin-left: 158px;
+    /* margin-left: 158px; */
 }
 .header__logo-link{
     display: flex;
@@ -87,10 +88,10 @@ body{
     
 }
 .header__item{
-    margin-right: 42px;
+    /* margin-right: 42px; */
 }
 .header__item:last-child{
-    margin-right: 198px;
+    /* margin-right: 198px; */
 }
 .btn__login{
     color: #FFFFFF;     
@@ -113,8 +114,8 @@ body{
 }
 
 .preview_container{
-    padding-top: 120px;
-    margin-left: 120px;
+    /* padding-top: 120px;
+    margin-left: 120px; */
 }
 .preview__titel{
     max-width: 892px;
@@ -125,7 +126,7 @@ body{
     
 }
 .preview__subtitel{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-style: italic;
     font-weight: 700;
     font-size: 20px;
@@ -134,8 +135,8 @@ body{
 }
 
 .search-form{
-    margin-top: 46px;
-    padding-bottom: 279px;
+    /* margin-top: 46px;
+    padding-bottom: 279px; */
 }
 .search-form__info{
     display: flex;
@@ -148,7 +149,7 @@ body{
 }
 
 .search-form__field{
-    padding-left: 41px;
+    /* padding-left: 41px; */
     width: 892px;
     height: 95px;
     left: 120px;
@@ -179,8 +180,8 @@ body{
     font-size: 24px;
     line-height: 32px;
     color: #FFFFFF;
-    margin-left: -246px;
-    margin-top: 18px;
+    /* margin-left: -246px; */
+    /* margin-top: 18px; */
     width: 228px;
     height: 59px;
     left: 766px;
@@ -215,9 +216,9 @@ h2{
 }
 
 .frame__list{
-    padding-left: 130px;
+    /* padding-left: 130px; */
     width: 100%;
-    margin-top: 38px;
+    /* margin-top: 38px; */
     display: flex;
    
 
@@ -236,12 +237,12 @@ h2{
 }
 
 .frame__item:nth-child(2) {
-    margin-left: 233px;
+    /* margin-left: 233px; */
 }
 
 
 .frame__item:nth-child(3) {
-    margin-left: 162px;
+    /* margin-left: 162px; */
 }
 
 
@@ -250,7 +251,7 @@ h2{
 }
 
 .steps__subtitle{
-    margin-top: 30px;
+    /* margin-top: 30px; */
     font-weight: 400;
     font-size: 20px;
     line-height: 24px;
@@ -271,19 +272,22 @@ h2{
 }
 
 .destinations__container{
-    margin-top: 97px;
+    /* margin-top: 97px; */
 }
+
+
 
 .slider__item{
-    display: flex;
+
+    /* display: none;
    min-width: 800px;
    min-height: 800px;
-   align-items: flex-end;
+   align-items: flex-end; */
 }
 
-.item_1 {
+/* .item_1 {
     min-width: 180px;
-    background: url(/image/destinations_spain_1.jpg) no-repeat;
+    background: url(../image/destinations_spain_1.jpg) no-repeat;
 }
 
 .item_1 p{
@@ -291,16 +295,16 @@ h2{
 }
 
 .item_2 {
-    background: url(/image/destinations_japan.jpg);
+    background: url(../image/destinations_japan.jpg);
 }
 
 .item_3 {
     min-width: 340px;
-    background: url(/image/destinations_usa_1.jpg) no-repeat;
-}
+    background: url(../image/destinations_usa_1.jpg) no-repeat;
+} */
 
 .slider{
-    margin-top: 58px;
+    /* margin-top: 58px; */
     max-width: 1440px;
     display: flex;
     gap: 60px;
@@ -313,7 +317,7 @@ h2{
 
 .slick-track{
     display: flex;
-    margin-top: 58px;
+    /* margin-top: 58px; */
 }
 
 .slider_text{
@@ -323,12 +327,12 @@ h2{
     font-size: 32px;
     line-height: 42px;
     color: #FFFFFF;
-    margin-left: 15px;
-    margin-bottom: 40px;
+    /* margin-left: 15px; */
+    /* margin-bottom: 40px; */
 }
 
 .dots{
-    margin-top: 12px ;
+    /* margin-top: 12px ; */
     display: flex;
     width: 80px;
     height: 20px;
@@ -382,7 +386,7 @@ h2{
 /* STORIES  style start */
 
 .stories__container{
-    margin-top: 80px;
+    /* margin-top: 80px; */
     max-width: 100%;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
