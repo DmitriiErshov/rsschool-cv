@@ -15,25 +15,25 @@ a{
     text-decoration: none;
 }
 body{
-    background-color: grey;
 }
 body._lock{
     overflow: hidden;
 }
 .container{
+   
     max-width: 1440px;
     margin: 0 auto;
     padding: 0 10px;
 }
 
 h1{
-    font-family: 'Aleo';
+       font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
     font-size: 80px;
+    /* font-size: calc(27px + 55 * (100vw / 1440)); */
     line-height: 96px;
-    color: #FFFFFF;
-    text-align: center;
+    color: #fff;
 }
 
 h2{
@@ -130,6 +130,84 @@ h2{
     height: 41px;
     font-size: 16px;
 }
+
+/* FOOTER */
+
+
+
+
+/* SECTION  preview*/
+.preview{ 
+    background: url(/Travel/image/bg.jpg) no-repeat center;
+}
+
+.preview__body{
+    margin: 0 120px;
+    display: flex;
+    flex-direction: column;
+    max-width: 890px;
+}
+
+.preview__body > h1{
+    margin-top: 120px;
+}
+.preview__body > .preview_text{
+    margin-top: 33px;
+}
+
+.preview_text{
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    /* font-size: 20px; */
+    font-size: calc(25px + (-4) * (100vw / 1440));
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.preview_search-form__info{
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    margin-top: 46px;
+    margin-bottom: 254px;
+    max-width: 892px;
+    height: 95px;
+}
+.search-form__field{
+    background: transparent;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    padding-left: 40px;
+}
+
+.search-form__field::placeholder{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+input:focus {
+    outline: none;
+}
+
+.search-form__btn{
+    margin-right: 18px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    width: 228px;
+    height: 59px;
+}
+
+/* MEDIA */
 @media (max-width: 1024px){
     .container{
         max-width: 1024px;
@@ -156,7 +234,7 @@ h2{
     .container{
         max-width: 768px;
     }
-    .logo_text{
+    /* .logo_text{
         display: none;
     }
     .header__btn{
@@ -166,15 +244,13 @@ h2{
     }
     .header__item{
         margin-right: 20px;
-    }
-
-
-}
-
-
-@media (max-width: 390px){
-    .container{
-        max-width: 390px;
+    } */
+    .header{
+ 
+        width: 100%;
+        height: 90px;
+        z-index: 10;
+        
     }
     h1{
         display: none;
@@ -283,6 +359,166 @@ h2{
         transform: scale(0) translate(0px, -50%);
 
       }
+
+}
+
+
+@media (max-width: 390px){
+    .container{
+        max-width: 390px;
+    }
+
+    h1, .preview_text{
+        display: none;
+    }
+    
+    ul, ol, li{
+        margin: 0;
+        padding: 0;
+    }
+    .preview{ 
+        background: url(/Travel/image/bg-mobile.jpg) no-repeat center;
+        margin-top: -122px;
+    }
+    .header__item{
+        margin: 0;
+    }
+    .header__item:nth-child(5), .header__item:nth-child(6){
+        display: block;
+    }
+    .header__nav{
+        /* position: fixed; */
+        top: 25px;
+        left: -225px;
+        width: 165px;
+        height: 250px;
+        padding: 44px 15px 30px 44px;
+        transition: right 0.3s ease 0s;
+        /* background: #F2785C;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px; */
+        /* transform: translate(100%, 0px); */
+        transition: right 0.3s ease 0s;
+        overflow: auto;
+    }
+
+    .header__nav._active{
+        left: 225px;
+    }
+
+    .header__list{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end
+        
+    }
+    .header__item{
+        margin-bottom: 10px;
+        position: relative;
+    
+    }
+
+    .header__item a{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+    }
+    .header__body{
+        margin: 43px 16px;
+    }
+    .header__btn{display: none;}
+    .header__burger{
+        display: flex; 
+        align-items: center;
+        position: fixed;
+        right: 20px;
+        width: 32px;
+        height: 32px;
+        cursor: pointer;
+        z-index: 1;
+        
+
+    }
+    .header__burger span,
+    .header__burger::before,
+    .header__burger::after {
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 26px;
+        height: 3px;
+        background-color: #FFFFFF;
+        transition: right 0.3s ease 0s;
+
+
+    }
+    .header__burger::before,
+    .header__burger::after{
+        content: '';
+
+    }
+    .header__burger::before {
+        top: 6px;
+      }
+      .header__burger::after {
+        bottom: 6px;
+      }
+
+      .header__burger span {
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+      }
+      .header__burger > span._active{
+        display: none;
+      }
+      .header__burger._active span,
+      .header__burger._active::before,
+      .header__burger._active::after{
+        
+        transform: scale(0) translate(0px, -50%);
+
+      }
+      .preview_search-form__info{
+        display: flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.7);
+        border-radius: 16px;
+        margin-top: 15px;
+        margin-bottom: 143px;
+        max-width: 360px;
+        height: 48px;
+    }
+    .search-form__field{
+        background: transparent;
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #F2785C;
+        padding-left: 16.5px;
+    }
+    
+    .search-form__field::placeholder{
+        font-family: 'Aleo';
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16.8px;
+        color: #F2785C;
+    }
+   
+    .search-form__btn{
+        margin-right: 9px;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 11px;
+        line-height: 15px;
+        width: 92px;
+        height: 30px;
+    }
       /* .header__burger._active::before {
         top: 50%;
         transform: rotate(-45deg) translate(0px, -50%);
