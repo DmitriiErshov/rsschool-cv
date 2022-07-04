@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+/* BUTTON */
+.btn{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+.btn:hover{
+    background: #FFFFFF;
+    color: #0D606F;
+
+}
+/* BUTTON */
+
+/* preview */
+.preview__content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background: url(/Travel/image/bg.jpg) no-repeat center;
+}
+
+.preview-titel,
+.preview-subtitel,
+.preview-search {
+    max-width: 892px;
+    margin-left: 120px;
+
+    
+}
+
+.preview-titel{
+    margin-top: 122px ;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 53px;
+    line-height: 96px;
+    color: #FFFFFF;
+}
+.preview-subtitel{
+    margin-top: 30px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+.preview-search {
+    margin-top: 46px;
+    margin-bottom: 254px;
+}
+
+.preview-search-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 892px;
+    height: 95px; 
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+}
+.search-form__field{
+    border: transparent;
+    width: 70%;
+    background: transparent;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    padding-left: 40px;
+}
+.search-form__field::placeholder{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+input:focus {
+    outline: none;
+}
+
+.search-form__btn{
+    margin-right: 18px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    width: 228px;
+    height: 59px;
+}
+/* preview */
+
+
+/* steps */
+.steps__content{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+h2{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+}
+.frame__list{
+    min-width: 1177px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.frame_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.frame-subtitel{
+    margin-top: 25px;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+.frame_item:nth-child(2){
+    padding-left: 70px;
+}
+/* steps */
+
+/* destinations */
+
+.destinations__content{
+    margin-top: 97px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.slider{
+    display: flex;
+    gap: 10px;
+    margin-top: 46px;
+}
+
+.dots{
+    margin-top: 24px ;
+    display: flex;
+    width: 80px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dots_item{
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);;
+}
+
+.dots_item:nth-last-child(2){
+    background: #F2785C;
+
+}
+
+.btn_destinations{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: row;
+    margin-top: 40px;
+    width: 228px;
+    height: 59px;
+}
+.btn_destinations:hover img{
+    fill: #0D606F;
+}
+/* destinations */
+
+/* stories */
+
+.stories{
+    margin-top: 80px;
+    text-align: center;
+}
+
+.stories__content{
+    margin-top: 40px;
+    background: url(/Travel/image/bg_stories.jpg) no-repeat center;
+}
+.stories__bg{
+    width: 100%;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.stories__list{
+    max-width: 1200px;
+    margin-left: 120px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.stories_item{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+
+}
+.stories_item img{
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+}
+.stories_text{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    margin-bottom: ;
+
+}
+.stories_titel{
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+
+}
+
+.stories_subtitel{
+    min-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+.stories_button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 55px;
+}
+.btn__stories{
+    
+    margin-top: 40px;
+}
+/* stories */
