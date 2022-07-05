@@ -1,14 +1,20 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    outline: 0;
 }
-
+ul, li, ol{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}   
 .container{
     max-width: 1440px;
     margin: 0 auto;
 }
 /* BUTTON */
-.btn{
+button{
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
@@ -18,12 +24,87 @@
     color: #FFFFFF;
     cursor: pointer;
 }
-.btn:hover{
+button:hover{
+    transition: 1s linear;
     background: #FFFFFF;
     color: #0D606F;
 
 }
 /* BUTTON */
+
+
+
+/* header */
+
+
+.header{
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    z-index: 5;
+}
+
+.header__list{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    height: 90px;
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+}
+
+.header-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+
+.logo-text{
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+}
+
+.header-links{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.header-link a{
+    text-decoration: none;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.header-link-5,
+.header-link-6{
+    display: none;
+}
+.btn_login{
+    width: 103px;
+    height: 41px;
+}
+
+.header__burger{
+    display: none;
+}
+
+/* header */
+
+
+
 
 /* preview */
 .preview__content{
@@ -218,6 +299,7 @@ h2{
     background: url(/Travel/image/bg_stories.jpg) no-repeat center;
 }
 .stories__bg{
+    padding: 40px 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.7);
 }
@@ -235,17 +317,35 @@ h2{
     gap: 40px;
 
 }
-.stories_item img{
+.stories_img{
+    width: 33.33333%;
+    height: 250px;
     filter: drop-shadow(0px 4px 4px #0D606F);
     border-radius: 16px;
 }
+
+.stories_img_1{
+    background: url(/Travel/image/card_stories_1.jpg) no-repeat center;
+}
+
+.stories_img_2{
+    background: url(/Travel/image/card_stories_2.jpg) no-repeat center;
+}
+
+.stories_img_3{
+    background: url(/Travel/image/card_stories_3.jpg) no-repeat center;
+}
+
+.stories_img_4{
+    background: url(/Travel/image/card_stories_4.jpg) no-repeat center;
+}
+
 .stories_text{
+    width: 65%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 24px;
-    margin-bottom: ;
-
 }
 .stories_titel{
     font-family: 'Aleo';
@@ -258,7 +358,6 @@ h2{
 }
 
 .stories_subtitel{
-    min-width: 700px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -274,10 +373,62 @@ h2{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 55px;
 }
 .btn__stories{
     
     margin-top: 40px;
 }
 /* stories */
+
+/* footer */
+
+.footer{
+    
+    background: url(/Travel/image/bg.jpg) no-repeat center;
+    
+}
+
+.footer_list{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    justify-content: space-around
+}
+.footer_item p{
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+.contacts{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.contacts img{
+    width: 30px;
+}
+.contacts:nth-child(2) img{
+    width: 70px;
+    filter: invert(1);
+}
+.social{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+footer a:hover{
+    transition: 0.3s linear;
+    filter: invert(1);
+}
+
+/* footer */
