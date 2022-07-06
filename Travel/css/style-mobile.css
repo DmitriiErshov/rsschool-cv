@@ -28,23 +28,102 @@
         box-shadow: none;
     }
     .header__burger{
+        z-index: 5;
+        position: relative;
         display: block;
         cursor: pointer;
-    }
-    .header__burger span{
+        width: 35px;
+        height: 25px;
+        margin-top: 20px;
+        margin-left: 290px;
+        background: url(/Travel/image/icon_burger.svg);
+        transition: ease 0.3s ease 0s;
+
+    }      
+
+    .header__burger._active{
+        z-index: 5;
+        position: relative;
         display: block;
+        cursor: pointer;
+        width: 35px;
+        height: 25px;
+        margin-top: -20px;
+        margin-left: 185px;
+        background: url(/Travel/image/icon_xros.svg);
+        transform: scale(1) translate(0px, -50%);
+    }
+    /* .header__burger span,
+    .header__burger::before,
+    .header__burger::after{
+        left: 0;
         position: absolute;
-        right: 20px;
-        width: 32px;
-        height: 32px;
-        color: #FFFFFF;
+        height: 3px;
+        width: 100%;
+        transition: all 0.3s ease 0s;
+        background-color: #fff;
     }
     .header__burger::before,
     .header__burger::after{
-        content: '';
+        content: "";
+    }
+    .header__burger::before{top: 0;}
+    .header__burger::after{bottom: 0;}
+
+    .header__burger span{
+        top: 50%;
+        transform: scale(1) translate(0px, -50%);
+    } */
+ 
+    
+    /*.header__burger._active::before{
+        top: 50%;
+        transform: rotate(-45deg) translate(0px, -50%);
+    }
+    .header__burger._active::after{
+        top: 50%;
+        transform: rotate(45deg) translate(0px, 50%);
+    } */
+    .header-nav{
+        display: block;
+        position: fixed;
+        top: 0;
+        right: -200px;
+    
+        width: 165px;
+        height: 250px;
+        background: #F2785C;
+        box-shadow: 0px 4px 3px rgba(13, 96, 111, 0.25);
+        border-radius: 10px;
+        transform: translate(-100%; 0px);
+        padding-right: 15px;
+        transition: right 0.3s ease 0s;
+    }
+    .header-nav._active{
+        right: 0;
+        transform: translate(0px; 0px);
 
     }
 
+    .header-nav > ul{
+        margin-top: 44px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-end;
+        font-family: 'Red Hat Text';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        color: #FFFFFF;
+
+    }
+    .header-link-5,
+    .header-link-6{
+    display: block;
+}
+    
     /* header */
 
     /* preview */

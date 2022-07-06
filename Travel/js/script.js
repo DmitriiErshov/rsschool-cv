@@ -1,18 +1,6 @@
 
 
 
-// menu burger
-
-const iconMenu = document.querySelector('.header__burger');
-if (iconMenu){
-    const menuBody = document.querySelector('.header__nav');
-    iconMenu.addEventListener("click", function (e) {
-        document.body.classList.toggle('.lock');
-        iconMenu.classList.toggle('_active');
-        menuBody.classList.toggle('_active');
-
-    });
-}
 
 //slider
 
@@ -42,17 +30,45 @@ $(document).ready(function(){
         infinite: false,
     })
 })
+// menu burger
+
+const iconMenu = document.querySelector('.header__burger');
+const menuBody = document.querySelector('.header-nav');
+if (iconMenu){
+    
+    iconMenu.addEventListener("click", function (e) {
+        document.body.classList.toggle('.lock');
+        iconMenu.classList.toggle('_active');
+        menuBody.classList.toggle('_active');
+
+    });
+}
 
 // ancher
 
-$(document).ready(function(){
-    $("a.nav-link").click(function(){
-        $("html, body").animate({
-            scrollTop: $($(this).attr("href")).offset().top + "px"
-        }, {
-            duration: 1000,
-            easing: "swing"
-        });
-        return false;
+const menuLinks = document.querySelectorAll('.nav-link[data-goto]');
+if (menuLinks.length > 0) {
+    menuLinks.forEach(menuLink => {
+        menuLink.addEventListener("click", onMenuLinkClick);
     });
-})
+
+    function onMenuLinkClick(e) {
+        const menuLink = e.target;
+        if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
+            const gotoBlock = document.querySelector(menuLink.dataset.goto);
+            const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
+
+            if (iconMenu.classList.contains('_active')) {
+                document.body.classList.remove('_lock');
+                iconMenu.classList.remove('_active');
+                menuBody.classList.remove('_active');
+            }
+
+            window.scrollTo({
+                top: gotoBlockValue,
+                behavior: "smooth"
+            });
+            e.preventDefault();
+        }
+    }
+}

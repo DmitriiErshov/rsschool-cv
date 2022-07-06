@@ -13,6 +13,9 @@ ul, li, ol{
     max-width: 1440px;
     margin: 0 auto;
 }
+/* body._lock{
+    overflow: hidden;
+} */
 /* BUTTON */
 button{
     border: none;
@@ -44,7 +47,9 @@ button:hover{
     width: 100%;
     z-index: 5;
 }
-
+.header__burger{
+    display: none;
+}
 .header__list{
     padding: 0 30px;
     display: flex;
