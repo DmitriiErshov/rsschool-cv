@@ -117,7 +117,17 @@
 /* steps */
 
 /* destinations */
-
+    .slider{
+        display: none;
+    }
+    .slider390{
+        margin-top: 20px;
+        display: block;
+        position: relative;
+    }
+    .slider390 img{
+    border-radius: 16px;
+    }
     .destinations__content{
         margin-top: 22px;
     }

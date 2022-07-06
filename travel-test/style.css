@@ -15,6 +15,7 @@ ul, li, ol{
 }
 /* BUTTON */
 button{
+    border: none;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
@@ -234,18 +235,54 @@ h2{
 /* destinations */
 
 .destinations__content{
+    min-width: 0;
     margin-top: 97px;
+    
+}
+
+.destinations__content h2{
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: center;
+}
+.slider390{
+    display: none;
+    
 }
 .slider{
-    display: flex;
     gap: 10px;
     margin-top: 46px;
 }
+.slider__item{
+    transition: all 0.3s ease 0s;
+    opacity: 0.4;
+}
+.slider__item p{
+    position: absolute;
+    z-index: 5;
+    bottom: 40px;
+    margin-left: 15px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+.slider390__item p{
+    position: absolute;
+    z-index: 5;
+    margin-left: 15px;
+    top: 8px;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
 
-.dots{
+/* .dots{
     margin-top: 24px ;
     display: flex;
     width: 80px;
@@ -265,8 +302,12 @@ h2{
 .dots_item:nth-last-child(2){
     background: #F2785C;
 
+} */
+.button_destinations{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
 .btn_destinations{
     font-family: 'Red Hat Text';
     font-style: normal;

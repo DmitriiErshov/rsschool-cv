@@ -1,0 +1,113 @@
+/* slider */
+.slick-list {
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+.slider .slick-slide{
+    padding: 0 60px;
+}
+.slider{
+    min-width: 0;
+    position: relative;
+}
+.slider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 10;
+    font-size: 0;
+}
+.slider .slick-arrow.slick-prev{
+    left: 0;
+}
+.slider .slick-arrow.slick-next{
+    right: 0;
+}
+.slider .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slider .slick-dots li{
+    list-style: none;
+    margin: 0px 10px;
+    margin-top: 24px;
+    border: none;
+}
+.slider .slick-dots button{
+    border: none;
+    font-size: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(242, 120, 92, 0.5);
+}
+.slider .slick-dots li.slick-active button{
+    background-color: rgba(242, 120, 92, 1);
+}
+.slider .slider__item.slick-center{
+    opacity: 1;
+}
+
+/* slider */
+
+
+/* slider390 */
+.slider390 .slick-slide{
+    padding: 0 15px;
+}
+.slider390 .slick-arrow{
+    position: absolute;
+    top: 90px;
+    z-index: 10;
+    font-size: 0;
+    width: 30px;
+    height: 30px;
+    box-shadow: none;
+}
+
+.slider390 .slick-arrow.slick-prev{
+    left: 25px;
+    background: url(/Travel/image/arrow_prev.svg) 0 0 no-repeat;
+}
+.slider390 .slick-arrow.slick-next{
+    right: 25px;
+    background: url(/Travel/image/arrow_next.svg) 0 0 no-repeat;
+}
+.slider390 .slick-arrow.slick-disabled{
+    opacity: 0.2;
+}
+
+.slider390 .slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 12px;
+    left: 162px;
+}
+.slider390 .slick-dots li{
+    list-style: none;
+    margin: 0px 6px;
+    /* margin-top: -120px; */
+    border: none;
+    z-index: 5;
+}
+.slider390 .slick-dots button{
+    border: none;
+    font-size: 0;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(242, 120, 92, 0.5);
+}
+.slider390 .slick-dots li.slick-active button{
+    background-color: rgba(242, 120, 92, 1);
+}
+.slider390 .slider__item.slick-center{
+    opacity: 1;
+}
+
+
+/* slider390 */

@@ -7,6 +7,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="/travel-test/style.css">
     <link rel="stylesheet" href="/travel-test/style-390px.css">
+    <link rel="stylesheet" href="/travel-test/style-slider.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
@@ -94,26 +95,40 @@
             <div class="container">
                 <div class="destinations__content">
                     <h2 class="titel">POPULAR DESTINATIONS</h2>
-                    <div class="slider">
-                        <div class="slider__item item_1">
-                            <p class="slider_text">SPAIN</p>
+                        <div class="slider">
+                            <div class="slider__item">
+                                <img src="/Travel/image/destinations_spain.jpg" alt="">
+                                <p class="slider_text">SPAIN</p>
+                            </div>
+                            <div class="slider__item">
+                                <img src="/Travel/image/destinations_japan.jpg" alt="">
+                            <p class="slider_text">JAPAN</p>
+                            </div>
+                            <div class="slider__item">
+                                <img src="/Travel/image/destinations_usa.jpg" alt="">
+                            <p class="slider_text">USA</p>
+                            </div>
                         </div>
-                        <div class="slider__item item_2">
-                           <p class="slider_text">JAPAN</p>
+                        <div class="slider390">
+                            <div class="slider390__item">
+                                <img src="/Travel/image/destinations_spain_mobile.jpg" alt="">
+                                <p class="slider390_text">SPAIN</p>
+                            </div>
+                            <div class="slider390__item">
+                                <img src="/Travel/image/destinations_japan_mobile.jpg" alt="">
+                            <p class="slider390_text">JAPAN</p>
+                            </div>
+                            <div class="slider390__item">
+                                <img src="/Travel/image/destinations_usa_mobile.jpg" alt="">
+                            <p class="slider390_text">USA</p>
+                            </div>
                         </div>
-                        <div class="slider__item item_3">
-                           <p class="slider_text">USA</p>
-                        </div>
-                    </div>
-                    <div class="dots">
-                        <div class="dots_item"></div>
-                        <div class="dots_item"></div>
-                        <div class="dots_item"></div>
-                    </div>
-                    <button class="btn btn_destinations">
+                    <div class="button_destinations">
+                        <button class="btn btn_destinations">
                         <img src="/Travel/image/arrow_btn.svg" alt="arr">
                         <p>Find More</p>
-                    </button>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -209,5 +224,8 @@
             </div>
         
     </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="/Travel/js/slick.min.js"></script>
+    <script src="/travel-test/index.js"></script>
 </body>
 </html>
