@@ -69,11 +69,11 @@
 
 .slider390 .slick-arrow.slick-prev{
     left: 25px;
-    background: url(/Travel/image/arrow_prev.svg) 0 0 no-repeat;
+    background: url(./image/arrow_prev.svg) 0 0 no-repeat;
 }
 .slider390 .slick-arrow.slick-next{
     right: 25px;
-    background: url(/Travel/image/arrow_next.svg) 0 0 no-repeat;
+    background: url(./image/arrow_next.svg) 0 0 no-repeat;
 }
 .slider390 .slick-arrow.slick-disabled{
     opacity: 0.2;
