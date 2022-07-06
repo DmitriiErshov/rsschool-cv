@@ -36,7 +36,7 @@
         height: 25px;
         margin-top: 20px;
         margin-left: 290px;
-        background: url(/Travel/image/icon_burger.svg);
+        background: url(../image/icon_burger.svg);
         transition: ease 0.3s ease 0s;
 
     }      
@@ -50,7 +50,7 @@
         height: 25px;
         margin-top: -20px;
         margin-left: 185px;
-        background: url(/Travel/image/icon_xros.svg);
+        background: url(../image/icon_xros.svg);
         transform: scale(1) translate(0px, -50%);
     }
     /* .header__burger span,
@@ -132,7 +132,7 @@
         width: 100%;
         display: flex;
         flex-direction: column;
-        background: url(./image/bg-mobile.jpg) no-repeat center;
+        background: url(../image/bg-mobile.jpg) no-repeat center;
     }
     .preview-titel,
     .preview-subtitel{
@@ -242,7 +242,7 @@
     }
     .stories__content{
         margin-top: 10px;
-        background: url(./image/bg_stories_mobile.jpg) no-repeat center;
+        background: url(../image/bg_stories_mobile.jpg) no-repeat center;
     }
     .stories__bg{
         padding-top: 10px;
