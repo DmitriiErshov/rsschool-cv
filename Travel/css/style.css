@@ -13,9 +13,9 @@ ul, li, ol{
     max-width: 1440px;
     margin: 0 auto;
 }
-/* body._lock{
+body._lock{
     overflow: hidden;
-} */
+}
 /* BUTTON */
 button{
     border: none;
