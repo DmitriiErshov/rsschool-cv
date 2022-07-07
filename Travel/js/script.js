@@ -34,12 +34,14 @@ $(document).ready(function(){
 
 const iconMenu = document.querySelector('.header__burger');
 const menuBody = document.querySelector('.header-nav');
+const overlay = document.querySelector('.burger-menu__overlay');
 if (iconMenu){
     
     iconMenu.addEventListener("click", function (e) {
         document.body.classList.toggle('.lock');
         iconMenu.classList.toggle('_active');
         menuBody.classList.toggle('_active');
+        overlay.classList.toggle('_active');
 
     });
 }
@@ -52,8 +54,16 @@ if (menuLinks.length > 0) {
         menuLink.addEventListener("click", onMenuLinkClick);
     });
 
+    overlay.addEventListener("click", function (e) {
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active');
+        menuBody.classList.remove('_active');
+        overlay.classList.remove('_active');
+    });
+
     function onMenuLinkClick(e) {
         const menuLink = e.target;
+
         if (menuLink.dataset.goto && document.querySelector(menuLink.dataset.goto)){
             const gotoBlock = document.querySelector(menuLink.dataset.goto);
             const gotoBlockValue = gotoBlock.getBoundingClientRect().top + pageYOffset - document.querySelector('header').offsetHeight;
@@ -62,7 +72,12 @@ if (menuLinks.length > 0) {
                 document.body.classList.remove('_lock');
                 iconMenu.classList.remove('_active');
                 menuBody.classList.remove('_active');
+                overlay.classList.remove('_active');
+
+
             }
+
+
 
             window.scrollTo({
                 top: gotoBlockValue,
