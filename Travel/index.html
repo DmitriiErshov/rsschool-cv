@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/style-mobile.css">
     <link rel="stylesheet" href="./css/style-slider.css">
+    <link rel="stylesheet" href="./css/popup-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap" rel="stylesheet">
@@ -35,12 +36,45 @@
                     <span></span>
                 </div>
                 <div class="header-item">
-                    <button class="btn btn_login">Login</button>
+                    <a href="#popup" class="btn btn_login">Login</a>
+                    <!-- <button href="#popup" class="btn btn_login popup-link">Login</button> -->
                 </div>
             </div>
         </div>
     </header>
     <main>
+        <div id="popup" class="popup">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <h3>Log in to your account</h3>
+                    <button class="btn_popup btn_facebook">
+                        <div class="button_icon"><img src="./image/facebook.svg" alt=""></div>
+                        <div class="button_text">Sign In with Facebook</div>
+                    </button>
+                    <button class="btn_popup btn_google">
+                        <div class="button_icon"><img src="./image/Google.svg" alt=""></div>
+                        <div class="button_text">Sign In with Google</div>
+                    </button>
+                    <p class="popup-text">or</p>
+                    <div class="input-popup">
+                        <p><b>E-mail</b><br>
+                        <input class="popup-inputtext" type="text">
+                        </p>
+                        <p><b>Password</b><br>
+                        <input class="popup-inputtext" type="text">
+                        </p>
+                    </div>
+                    <button class="btn_popup btn_sign-in">
+                        <div class="button_icon"></div>
+                        <div class="button_text">Sign In</div>
+                    </button>
+                    
+                    <a href="#">Forgot Your Password?</a>
+                    <div class="popup__register"><p>Don’t have an account?<a href="">Register</a></p></div>
+                    
+                </div>
+            </div>
+        </div>
         <section class="preview">
             <div class="container">
                 <div class="preview__content">
@@ -229,5 +263,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/script.js"></script>
+    <script src="./js/popup.js"></script>
 </body>
 </html>

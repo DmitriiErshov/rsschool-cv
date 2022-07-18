@@ -17,7 +17,7 @@ body._lock{
     overflow: hidden;
 }
 /* BUTTON */
-button{
+.btn{
     border: none;
     font-family: 'Red Hat Text';
     font-style: normal;
@@ -28,7 +28,7 @@ button{
     color: #FFFFFF;
     cursor: pointer;
 }
-button:hover{
+.btn:hover{
     transition: 1s linear;
     background: #FFFFFF;
     color: #0D606F;
@@ -163,7 +163,7 @@ button:hover{
     border-radius: 16px;
 }
 .search-form__field{
-    border: transparent;
+    border: none;
     width: 70%;
     background: transparent;
     font-style: italic;
